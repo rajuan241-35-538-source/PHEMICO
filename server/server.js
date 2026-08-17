@@ -18,6 +18,9 @@ app.use('/api/medicines', medicineRoutes);
 const supplierRoutes = require('./routes/suppliers');
 app.use('/api/suppliers', supplierRoutes);
 
+const salesRoutes = require('./routes/sales');
+app.use('/api/sales', salesRoutes);
+
 // Test route to confirm server + DB are working
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
