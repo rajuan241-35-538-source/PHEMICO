@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import Sidebar from '../components/Sidebar';
 import api from '../api/axios';
+import NotificationBell from '../components/NotificationBell';
 import '../styles/layout.css';
+
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -41,6 +43,9 @@ export default function Dashboard() {
     <div className="app-layout">
       <Sidebar />
       <main className="main-content">
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '12px' }}>
+  <NotificationBell />
+    </div>
         <div className="page-heading">
           <h2>Pharmacy Overview</h2>
 <p>Welcome back, {user?.name?.split(' ')[0]} Your pharmacy, simplified.</p>

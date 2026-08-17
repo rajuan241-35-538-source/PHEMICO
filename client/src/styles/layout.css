@@ -278,5 +278,71 @@ body {
   font-size: 19px;
 }
 
+.notif-bell-wrapper {
+  position: relative;
+}
+
+.notif-bell {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.notif-bell:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.notif-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #dc2626;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-dropdown {
+  position: absolute;
+  right: 0;
+  top: 46px;
+  width: 320px;
+  background: #16283b;
+  border: 1px solid #223247;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  padding: 16px;
+  z-index: 20;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.notif-dropdown h4 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.notif-dropdown-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #1b2c40;
+  font-size: 13px;
+  color: #dbe4ea;
+}
+
+.notif-dropdown-item:last-child {
+  border-bottom: none;
+}
 .success-msg { color: #4ade80; font-size: 13px; margin: 10px 0; }
 .error-msg { color: #f87171; font-size: 13px; margin: 10px 0; }

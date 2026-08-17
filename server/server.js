@@ -25,6 +25,7 @@ app.use('/api/sales', salesRoutes);
 const notificationRoutes = require('./routes/notifications');
 app.use('/api/notifications', notificationRoutes);
 
+
 // Test route to confirm server + DB are working
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Server is running' });
